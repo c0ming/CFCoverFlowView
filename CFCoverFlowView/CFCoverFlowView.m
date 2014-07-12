@@ -66,6 +66,7 @@
     _shadowRadius = 20.0;
     _shadowOffset = 0.0;
 
+    self.multipleTouchEnabled = NO;
     self.clipsToBounds = YES;
     [self setupSublayerTransform];
 }
@@ -153,7 +154,7 @@
     [self transformShadowView2WithDistance:_pageItemSpace];
 }
 
-// 
+//
 //- (void)setPageItemsWithImageURLs:(NSArray *)urls placeholderImage:(UIImage *)placeholder {
 //}
 
@@ -171,15 +172,15 @@
 
 - (void)startAutoAnimating {
     if (_autoAnimation) {
-        [self performSelector:@selector(autoAnimation) withObject:nil afterDelay:_animationDuration];
+        [self performSelector:@selector(coverFlowViewAnimation) withObject:nil afterDelay:_animationDuration];
     }
 }
 
 - (void)stopAutoAnimating {
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoAnimation) object:nil];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(coverFlowViewAnimation) object:nil];
 }
 
-- (void)autoAnimation {
+- (void)coverFlowViewAnimation {
     [self stopAutoAnimating];
 
     // transform with 1 point first for avoiding shadow view flash.
@@ -254,11 +255,7 @@
     [CATransaction commit];
 
     // repeat it if auto animation
-    __weak typeof(self) weakSelf = self;
-
-    [CATransaction setCompletionBlock: ^{
-        [weakSelf startAutoAnimating];
-    }];
+    [self startAutoAnimating];
 }
 
 - (void)animationPageItemsWithDistance:(CGFloat)distance {
@@ -366,7 +363,7 @@
         }
     }
 
-    if (currentScrollIndex != lastScrollIndex && [self.delegate respondsToSelector:@selector(coverFlowView:didScrollPageItemToIndex:)]) {
+    if (currentScrollIndex != lastScrollIndex && self.delegate != nil && [self.delegate respondsToSelector:@selector(coverFlowView:didScrollPageItemToIndex:)]) {
         [self.delegate coverFlowView:self didScrollPageItemToIndex:currentScrollIndex];
     }
 
@@ -427,6 +424,19 @@
     group.animations = @[transformAnimation, shadowAnimation];
     group.removedOnCompletion = YES;
     return group;
+}
+
+#pragma mark - Life cycle
+
+- (void)dealloc {
+    self.delegate = nil;
+    self.views = nil;
+}
+
+- (void)removeFromSuperview {
+    [self stopAutoAnimating];
+
+    [super removeFromSuperview];
 }
 
 @end
