@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9AD1A40196FFB180049CDC1 /* CFCoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AD1A3F196FFB180049CDC1 /* CFCoverFlowView.m */; };
+		A9C6CE6E19384B62001FBE92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6CE6D19384B62001FBE92 /* Foundation.framework */; };
+		A9C6CE7019384B62001FBE92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6CE6F19384B62001FBE92 /* CoreGraphics.framework */; };
+		A9C6CE7219384B62001FBE92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6CE7119384B62001FBE92 /* UIKit.framework */; };
+		A9C6CE7819384B62001FBE92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9C6CE7619384B62001FBE92 /* InfoPlist.strings */; };
+		A9C6CE7A19384B62001FBE92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6CE7919384B62001FBE92 /* main.m */; };
+		A9C6CE7E19384B62001FBE92 /* CFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6CE7D19384B62001FBE92 /* CFAppDelegate.m */; };
+		A9C6CE8119384B62001FBE92 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C6CE7F19384B62001FBE92 /* Main_iPhone.storyboard */; };
+		A9C6CE8419384B62001FBE92 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C6CE8219384B62001FBE92 /* Main_iPad.storyboard */; };
+		A9C6CE8719384B62001FBE92 /* CFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6CE8619384B62001FBE92 /* CFViewController.m */; };
+		A9C6CE8919384B62001FBE92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C6CE8819384B62001FBE92 /* Images.xcassets */; };
+		A9C6CE9019384B62001FBE92 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6CE8F19384B62001FBE92 /* XCTest.framework */; };
+		A9C6CE9119384B62001FBE92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6CE6D19384B62001FBE92 /* Foundation.framework */; };
+		A9C6CE9219384B62001FBE92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C6CE7119384B62001FBE92 /* UIKit.framework */; };
+		A9C6CE9A19384B62001FBE92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9C6CE9819384B62001FBE92 /* InfoPlist.strings */; };
+		A9C6CE9C19384B62001FBE92 /* CFCoverFlowViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C6CE9B19384B62001FBE92 /* CFCoverFlowViewDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9C6CE9319384B62001FBE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9C6CE6219384B61001FBE92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9C6CE6919384B62001FBE92;
+			remoteInfo = CFCoverFlowViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9AD1A3E196FFB180049CDC1 /* CFCoverFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCoverFlowView.h; sourceTree = "<group>"; };
+		A9AD1A3F196FFB180049CDC1 /* CFCoverFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCoverFlowView.m; sourceTree = "<group>"; };
+		A9C6CE6A19384B62001FBE92 /* CFCoverFlowViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFCoverFlowViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C6CE6D19384B62001FBE92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9C6CE6F19384B62001FBE92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9C6CE7119384B62001FBE92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9C6CE7519384B62001FBE92 /* CFCoverFlowViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CFCoverFlowViewDemo-Info.plist"; sourceTree = "<group>"; };
+		A9C6CE7719384B62001FBE92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9C6CE7919384B62001FBE92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9C6CE7B19384B62001FBE92 /* CFCoverFlowViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CFCoverFlowViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A9C6CE7C19384B62001FBE92 /* CFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFAppDelegate.h; sourceTree = "<group>"; };
+		A9C6CE7D19384B62001FBE92 /* CFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFAppDelegate.m; sourceTree = "<group>"; };
+		A9C6CE8019384B62001FBE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A9C6CE8319384B62001FBE92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A9C6CE8519384B62001FBE92 /* CFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFViewController.h; sourceTree = "<group>"; };
+		A9C6CE8619384B62001FBE92 /* CFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFViewController.m; sourceTree = "<group>"; };
+		A9C6CE8819384B62001FBE92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9C6CE8E19384B62001FBE92 /* CFCoverFlowViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFCoverFlowViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C6CE8F19384B62001FBE92 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9C6CE9719384B62001FBE92 /* CFCoverFlowViewDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CFCoverFlowViewDemoTests-Info.plist"; sourceTree = "<group>"; };
+		A9C6CE9919384B62001FBE92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9C6CE9B19384B62001FBE92 /* CFCoverFlowViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFCoverFlowViewDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9C6CE6719384B62001FBE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6CE7019384B62001FBE92 /* CoreGraphics.framework in Frameworks */,
+				A9C6CE7219384B62001FBE92 /* UIKit.framework in Frameworks */,
+				A9C6CE6E19384B62001FBE92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C6CE8B19384B62001FBE92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6CE9019384B62001FBE92 /* XCTest.framework in Frameworks */,
+				A9C6CE9219384B62001FBE92 /* UIKit.framework in Frameworks */,
+				A9C6CE9119384B62001FBE92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9C6CE6119384B61001FBE92 = {
+			isa = PBXGroup;
+			children = (
+				A9C6CE7319384B62001FBE92 /* CFCoverFlowViewDemo */,
+				A9C6CE9519384B62001FBE92 /* CFCoverFlowViewDemoTests */,
+				A9C6CE6C19384B62001FBE92 /* Frameworks */,
+				A9C6CE6B19384B62001FBE92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9C6CE6B19384B62001FBE92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6CE6A19384B62001FBE92 /* CFCoverFlowViewDemo.app */,
+				A9C6CE8E19384B62001FBE92 /* CFCoverFlowViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9C6CE6C19384B62001FBE92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6CE6D19384B62001FBE92 /* Foundation.framework */,
+				A9C6CE6F19384B62001FBE92 /* CoreGraphics.framework */,
+				A9C6CE7119384B62001FBE92 /* UIKit.framework */,
+				A9C6CE8F19384B62001FBE92 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9C6CE7319384B62001FBE92 /* CFCoverFlowViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6CEB119388631001FBE92 /* CFCoverFlowView */,
+				A9C6CE7C19384B62001FBE92 /* CFAppDelegate.h */,
+				A9C6CE7D19384B62001FBE92 /* CFAppDelegate.m */,
+				A9C6CE7F19384B62001FBE92 /* Main_iPhone.storyboard */,
+				A9C6CE8219384B62001FBE92 /* Main_iPad.storyboard */,
+				A9C6CE8519384B62001FBE92 /* CFViewController.h */,
+				A9C6CE8619384B62001FBE92 /* CFViewController.m */,
+				A9C6CE8819384B62001FBE92 /* Images.xcassets */,
+				A9C6CE7419384B62001FBE92 /* Supporting Files */,
+			);
+			path = CFCoverFlowViewDemo;
+			sourceTree = "<group>";
+		};
+		A9C6CE7419384B62001FBE92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6CE7519384B62001FBE92 /* CFCoverFlowViewDemo-Info.plist */,
+				A9C6CE7619384B62001FBE92 /* InfoPlist.strings */,
+				A9C6CE7919384B62001FBE92 /* main.m */,
+				A9C6CE7B19384B62001FBE92 /* CFCoverFlowViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9C6CE9519384B62001FBE92 /* CFCoverFlowViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6CE9B19384B62001FBE92 /* CFCoverFlowViewDemoTests.m */,
+				A9C6CE9619384B62001FBE92 /* Supporting Files */,
+			);
+			path = CFCoverFlowViewDemoTests;
+			sourceTree = "<group>";
+		};
+		A9C6CE9619384B62001FBE92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9C6CE9719384B62001FBE92 /* CFCoverFlowViewDemoTests-Info.plist */,
+				A9C6CE9819384B62001FBE92 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9C6CEB119388631001FBE92 /* CFCoverFlowView */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD1A3E196FFB180049CDC1 /* CFCoverFlowView.h */,
+				A9AD1A3F196FFB180049CDC1 /* CFCoverFlowView.m */,
+			);
+			path = CFCoverFlowView;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9C6CE6919384B62001FBE92 /* CFCoverFlowViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C6CE9F19384B62001FBE92 /* Build configuration list for PBXNativeTarget "CFCoverFlowViewDemo" */;
+			buildPhases = (
+				A9C6CE6619384B62001FBE92 /* Sources */,
+				A9C6CE6719384B62001FBE92 /* Frameworks */,
+				A9C6CE6819384B62001FBE92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CFCoverFlowViewDemo;
+			productName = CFCoverFlowViewDemo;
+			productReference = A9C6CE6A19384B62001FBE92 /* CFCoverFlowViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9C6CE8D19384B62001FBE92 /* CFCoverFlowViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C6CEA219384B62001FBE92 /* Build configuration list for PBXNativeTarget "CFCoverFlowViewDemoTests" */;
+			buildPhases = (
+				A9C6CE8A19384B62001FBE92 /* Sources */,
+				A9C6CE8B19384B62001FBE92 /* Frameworks */,
+				A9C6CE8C19384B62001FBE92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9C6CE9419384B62001FBE92 /* PBXTargetDependency */,
+			);
+			name = CFCoverFlowViewDemoTests;
+			productName = CFCoverFlowViewDemoTests;
+			productReference = A9C6CE8E19384B62001FBE92 /* CFCoverFlowViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9C6CE6219384B61001FBE92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = c0ming;
+				TargetAttributes = {
+					A9C6CE8D19384B62001FBE92 = {
+						TestTargetID = A9C6CE6919384B62001FBE92;
+					};
+				};
+			};
+			buildConfigurationList = A9C6CE6519384B61001FBE92 /* Build configuration list for PBXProject "CFCoverFlowViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9C6CE6119384B61001FBE92;
+			productRefGroup = A9C6CE6B19384B62001FBE92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9C6CE6919384B62001FBE92 /* CFCoverFlowViewDemo */,
+				A9C6CE8D19384B62001FBE92 /* CFCoverFlowViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9C6CE6819384B62001FBE92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6CE8419384B62001FBE92 /* Main_iPad.storyboard in Resources */,
+				A9C6CE8919384B62001FBE92 /* Images.xcassets in Resources */,
+				A9C6CE8119384B62001FBE92 /* Main_iPhone.storyboard in Resources */,
+				A9C6CE7819384B62001FBE92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C6CE8C19384B62001FBE92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6CE9A19384B62001FBE92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9C6CE6619384B62001FBE92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6CE7A19384B62001FBE92 /* main.m in Sources */,
+				A9C6CE7E19384B62001FBE92 /* CFAppDelegate.m in Sources */,
+				A9C6CE8719384B62001FBE92 /* CFViewController.m in Sources */,
+				A9AD1A40196FFB180049CDC1 /* CFCoverFlowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C6CE8A19384B62001FBE92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C6CE9C19384B62001FBE92 /* CFCoverFlowViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9C6CE9419384B62001FBE92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9C6CE6919384B62001FBE92 /* CFCoverFlowViewDemo */;
+			targetProxy = A9C6CE9319384B62001FBE92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9C6CE7619384B62001FBE92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C6CE7719384B62001FBE92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9C6CE7F19384B62001FBE92 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C6CE8019384B62001FBE92 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A9C6CE8219384B62001FBE92 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C6CE8319384B62001FBE92 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A9C6CE9819384B62001FBE92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9C6CE9919384B62001FBE92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9C6CE9D19384B62001FBE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9C6CE9E19384B62001FBE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9C6CEA019384B62001FBE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFCoverFlowViewDemo/CFCoverFlowViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "CFCoverFlowViewDemo/CFCoverFlowViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9C6CEA119384B62001FBE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFCoverFlowViewDemo/CFCoverFlowViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "CFCoverFlowViewDemo/CFCoverFlowViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9C6CEA319384B62001FBE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CFCoverFlowViewDemo.app/CFCoverFlowViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFCoverFlowViewDemo/CFCoverFlowViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CFCoverFlowViewDemoTests/CFCoverFlowViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9C6CEA419384B62001FBE92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CFCoverFlowViewDemo.app/CFCoverFlowViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CFCoverFlowViewDemo/CFCoverFlowViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "CFCoverFlowViewDemoTests/CFCoverFlowViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9C6CE6519384B61001FBE92 /* Build configuration list for PBXProject "CFCoverFlowViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C6CE9D19384B62001FBE92 /* Debug */,
+				A9C6CE9E19384B62001FBE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C6CE9F19384B62001FBE92 /* Build configuration list for PBXNativeTarget "CFCoverFlowViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C6CEA019384B62001FBE92 /* Debug */,
+				A9C6CEA119384B62001FBE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C6CEA219384B62001FBE92 /* Build configuration list for PBXNativeTarget "CFCoverFlowViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C6CEA319384B62001FBE92 /* Debug */,
+				A9C6CEA419384B62001FBE92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9C6CE6219384B61001FBE92 /* Project object */;
+}
