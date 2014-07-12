@@ -9,7 +9,7 @@ CFCoverFlowView is a CoverFlow view with PagingEnabled similar to App Store for 
 
 ## Usage
 
-Add CFCoverFlowView.h/m file into your project. You can create it programmatically or use it in your storyboard
+Add CFCoverFlowView.h/m file into your project. You can create CFCoverFlowView programmatically or use it in your storyboard
 with AutoLayout.
 
 
