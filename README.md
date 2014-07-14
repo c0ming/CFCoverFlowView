@@ -13,7 +13,7 @@ Add CFCoverFlowView.h/m file into your project. You can create CFCoverFlowView p
 with AutoLayout.
 
 
-## Examples
+## Example
 
 ```objc
 CFCoverFlowView *coverFlowView = [[CFCoverFlowView alloc] initWithFrame:CGRectMake(0.0, 0.0, 768.0, 200.0)];
