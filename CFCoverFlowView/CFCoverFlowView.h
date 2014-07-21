@@ -3,7 +3,7 @@
 //  CFCoverFlowViewDemo
 //
 //  Created by c0ming on 14-7-6.
-//  Copyright (c) 2014年 c0ming. All rights reserved.
+//  Copyright (c) 2014 c0ming. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,9 +17,9 @@
 
 @end
 
-@interface CFCoverFlowView : UIView
+@interface CFCoverFlowView : UIControl
 
-@property (nonatomic, assign) id <CFCoverFlowViewDelegate> delegate;
+@property (nonatomic, weak) id <CFCoverFlowViewDelegate> delegate;
 
 @property (nonatomic, assign) CFTimeInterval animationDuration;
 @property (nonatomic, getter = isAutoAnimation) BOOL autoAnimation;

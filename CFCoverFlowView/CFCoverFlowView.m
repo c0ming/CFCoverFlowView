@@ -3,7 +3,7 @@
 //  CFCoverFlowViewDemo
 //
 //  Created by c0ming on 14-7-6.
-//  Copyright (c) 2014年 c0ming. All rights reserved.
+//  Copyright (c) 2014 c0ming. All rights reserved.
 //
 
 #import "CFCoverFlowView.h"
@@ -146,6 +146,7 @@
 
     // add two shadow views
     [self addShadowViews];
+    
     [self setupSelectionMaskLayer];
 
     // init page items's transform
@@ -428,15 +429,14 @@
 
 #pragma mark - Life cycle
 
-- (void)dealloc {
-    self.delegate = nil;
-    self.views = nil;
-}
-
 - (void)removeFromSuperview {
     [self stopAutoAnimating];
-
+    
     [super removeFromSuperview];
+}
+
+- (void)dealloc {
+    self.views = nil;
 }
 
 @end
